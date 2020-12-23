@@ -84,10 +84,12 @@ yarn && yarn start
    
      一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
      
-     如:login.validateAccount.accountError=account is invalidate
+     如: "login.validateAccount.accountError":"account is invalidate";
 
      
-     Amis 使用的是 {"确定":"confirm"},目前就一个资源文件，格式不一致的，需要自定义国际化文本来替换内部的资源串。
+     Amis 使用的是 {"确定":"confirm"} 以中文字符串为key,
+     
+     目前就一个资源文件，项目和Amis的格式不一致的，需要自定义国际化文本来替换内部的资源串。
 
  5.2 主题方案
 
