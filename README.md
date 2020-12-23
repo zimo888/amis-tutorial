@@ -22,7 +22,8 @@ yarn && yarn start
 
     JSSDK 使用方式会返回scope,并且可以scope.getComponentByName("form1") 方式获取组件实例，
 
-    ```
+    ```js
+
     let scope = amisEmbed.embed('#root',{
        "type":"page",
        "body":[
@@ -31,7 +32,8 @@ yarn && yarn start
                "name":"form1"
            }
        ]
-   }
+    },{},{})
+    scope.getComponentByName("form1")
     ```
 
     NPM方式的使用，需要做一个桥来返回实例
