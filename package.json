@@ -24,9 +24,7 @@
   },
   "scripts": {
     "start": "cross-env PORT=3001 HTTPS=true  react-app-rewired start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "export NODE_OPTIONS='--max-old-space-size=4096' && GENERATE_SOURCEMAP=false react-app-rewired build"
   },
   "eslintConfig": {
     "extends": [

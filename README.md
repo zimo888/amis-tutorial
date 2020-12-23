@@ -65,7 +65,14 @@ yarn && yarn start
 
    //amis挂载
 
-   amisEmbed.embed('#root',{} //AmisJSONSchema, {}, {}//amisEnv);      
+   amisEmbed.embed('#root',{
+       "type":"page",
+       "body":[
+           {
+               "type":"customComponent"
+           }
+       ]
+   }, {}, { fetcher:function()=>{},...}//amisEnv);      
 
 
 ```
@@ -74,10 +81,23 @@ yarn && yarn start
 
    
  5.1 国际化方案
+   
+     一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
+     
+     如:login.validateAccount.accountError=account is invalidate
+
+     
+     Amis 使用的是 {"确定":"confirm"},目前就一个资源文件，格式不一致的，需要自定义国际化文本来替换内部的资源串。
 
  5.2 主题方案
 
+    Amis使用Sass 作为样式主题，项目开发中需要对Amis默认的样式进行覆盖的，也通用需要Sass进行主题管理，导入amis之后，进行覆盖即可。
+    
+    实现方式在src/scss 文件夹中，导入自己的default.scss 即可。
+
  5.3 Amis 结合Antd
+
+    提供了一些Antd 的自定义组件样例。
     
  5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
