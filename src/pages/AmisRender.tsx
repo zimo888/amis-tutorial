@@ -2,8 +2,7 @@ import * as React from 'react';
 import {
     render as renderSchema
 } from 'amis';
-import 'amis/lib/themes/default.css'
-
+import '../scss/default.scss'
 export default class AmisRenderer extends React.Component {
     env: any = null;
 
