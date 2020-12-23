@@ -14,6 +14,7 @@ export default class Bridge extends React.Component{
     schema = {
         "type": "page",
         "body": [
+            "文件路径 /pages/demos/communication/bridge/index.tsx",
         {
             "type": "amisBridge",
             "name":"bridge",

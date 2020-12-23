@@ -8,7 +8,9 @@ import AmisRender from '../AmisRender'
 export default class HelloWorld extends React.Component{
     schema = {
         "type": "page",
-        "body": {
+        "body": [
+          "文件路径 /pages/demos/Helloworld.tsx",
+          {
           "type": "form",
           "api": "https://houtai.baidu.com/api/mock2/form/saveForm",
           "controls": [
@@ -23,7 +25,7 @@ export default class HelloWorld extends React.Component{
               "label": "邮箱："
             }
           ]
-        }
+        }]
       }
     render(){
         return <AmisRender schema={this.schema}/>

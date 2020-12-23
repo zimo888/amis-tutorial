@@ -20,6 +20,43 @@ const addCustomize = () => (config,env) => {
     }
     return config;
 }
+
+
+// 跨域配置
+const devServerConfig = () => config => {
+    if (process.env.NODE_ENV === 'production') {
+        return productionConfig(config);
+    }
+    return {
+        ...config,
+        compress: true,
+        proxy: [
+            {
+                context: ['/api/'],//这里配置需要转发的前缀
+                target: 'http://xxx.com',//这里配置目标路径
+                changeOrigin: true,
+                secure: false,
+                onProxyRes: function (proxyRes) {
+                    //cookie 的设置，把Domain设置成自己的。
+                    const cookies = proxyRes.headers['set-cookie']
+                    const cookieRegex = /Domain=\.xxxx.com/i
+                    if (cookies) {
+                        const newCookie = cookies.map(function (cookie) {
+                            if (cookieRegex.test(cookie)) {
+                                return cookie.replace(cookieRegex, 'Domain=localhost')
+                            }
+                            return cookie
+                        })
+                        delete proxyRes.headers['set-cookie']
+                        proxyRes.headers['set-cookie'] = newCookie
+                    }
+                }
+            }
+        ]
+
+    }
+}
+
 module.exports = {
     webpack: override(
         addWebpackPlugin(new ProgressBarPlugin()),
@@ -40,6 +77,7 @@ module.exports = {
             }
         }),
         addCustomize(),
+        // devServerConfig(),//需要跨域的时候打开此项
         addWebpackAlias({
             "@": path.resolve(__dirname, "src"),
             'sortablejs$': 'sortablejs/Sortable.js' //修正Amis 拖拽问题

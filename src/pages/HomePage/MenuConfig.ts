@@ -4,6 +4,8 @@ import Communication from '../demos/communication/target-name'
 import Bridge from '../demos/communication/bridge'
 import NormalRender from '../demos/customization/NormalRender'
 import FormItemRender from '../demos/customization/FormItemRender'
+import AddRules from '../demos/amisUtils/addRules'
+import RegisterAmisIcon from '../demos/amisUtils/registerIcon'
 const namespace = "/home";
 export const naviagtions = [
     {
@@ -46,6 +48,24 @@ export const naviagtions = [
                 icon: '',
                 component: FormItemRender
             },
+        ]
+    },{
+        name: 'Amis 工具方法',
+        path: namespace + '/amisUtils',
+        icon: '',
+        children:[
+            {
+                name: '注册自定义校验规则',
+                path: namespace + '/amisUtils/addRules',
+                icon: '',
+                component: AddRules
+            },
+            {
+                name: '注册自定义图标',
+                path: namespace + '/amisUtils/registerIcon',
+                icon: '',
+                component: RegisterAmisIcon
+            }
         ]
     }
 ]

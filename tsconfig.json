@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig_ext.json",
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",

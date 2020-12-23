@@ -8,7 +8,9 @@ import AmisRender from '../../../AmisRender'
 export default class Communication extends React.Component{
     schema = {
         "type": "page",
-        "body": [{
+        "body": [
+            "文件路径 /pages/demos/communication/target-name/index.tsx",
+            {
           "type": "form",
           "name":"form1",
           "target":"form2,form3",//target 声明接收的组件

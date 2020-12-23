@@ -25,7 +25,7 @@
    写在这里，不在项目里写了
 
    1.引入注册类
-   
+
    2.使用React包其他技术栈的组件
 
 ```js
@@ -71,6 +71,14 @@
     主题方案
 
 6. Amis 结合Antd
+
+7. Amis工具方法使用
+
+   addRules 自定义校验规则
+
+   registerIcon 自定义图标(按钮暂时不能用)
+
+8. 增加开发时跨域请求接口配置 (config-overrides.js)
     
 demo预览：
 
