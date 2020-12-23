@@ -74,8 +74,11 @@ yarn && yarn start
 
    
  5.1 国际化方案
+
  5.2 主题方案
+
  5.3 Amis 结合Antd
+    
  5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
 ## 6. Amis工具方法使用
