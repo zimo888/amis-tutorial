@@ -2,6 +2,8 @@
 
 总结了 Amis一些使用技巧，帮助初学者入门
 
+当前版本 Amis 1.0.19
+
 整理的内容包括：
 
 1. HelloWorld (基于 Create React App)
@@ -19,7 +21,7 @@
     非Form类
 
     JSSDK自定义组件方式
-    
+
 5. Amis 其他
 
     国际化方案
