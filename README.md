@@ -4,21 +4,27 @@
 
 当前版本 Amis 1.0.19
 
+demo预览：
+
+```
+yarn && yarn start
+```
+
 整理的内容包括：
 
-1. HelloWorld (基于 Create React App)
-2. Amis 基本使用
-3. Amis 组件通信
+##1. HelloWorld (基于 Create React App)
+##2. Amis 基本使用
+##3. Amis 组件通信
 
-    target-Name 方式
+ 3.1 target-Name 方式
 
-    桥接方式
+ 3.2 桥接方式
 
-4. Amis 自定义组件
+##4. Amis 自定义组件
 
-    FormItem 类
+4.1 FormItem 类
 
-    非Form类
+4.2 非Form类
 
 ## JSSDK自定义组件方式
 
@@ -64,22 +70,24 @@
 
 ```
 
-5. Amis 其他
+##5. Amis 其他
 
-    国际化方案
+   
+ 5.1 国际化方案
+ 5.2 主题方案
+ 5.3 Amis 结合Antd
+ 5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
-    主题方案
-
-6. Amis 结合Antd
-
-7. Amis工具方法使用
+##6. Amis工具方法使用
 
    addRules 自定义校验规则
 
    registerIcon 自定义图标(按钮暂时不能用)
 
-8. 增加开发时跨域请求接口配置 (config-overrides.js)
-    
-demo预览：
 
-yarn && yarn start
+    
+
+
+
+
+
