@@ -20,7 +20,7 @@ yarn && yarn start
 
  3.2 桥接方式
 
-##4. Amis 自定义组件
+## 4. Amis 自定义组件
 
 4.1 FormItem 类
 
