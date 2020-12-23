@@ -69,12 +69,18 @@ class AmisBridge extends React.Component<RendererProps> {
       })
   }
 
+  /**
+   * 发送到目标组件的receive
+   */
   send(target: any, values: any) {
     const scoped = this.context
     const component = scoped.getComponentByName(target)
     component && component.receive && component.receive(values, target)
   }
 
+  /**
+   * 刷新目标组件
+   */
   reloadTarget(target: string, data: any) {
     const scoped = this.context;
     scoped.reload(target, data);

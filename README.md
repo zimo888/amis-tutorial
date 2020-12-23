@@ -18,7 +18,29 @@ yarn && yarn start
 
  3.1 target-Name 方式
 
- 3.2 桥接方式
+ 3.2 桥接方式(非官方方式)
+
+    JSSDK 使用方式会返回scope,并且可以scope.getComponentByName("form1") 方式获取组件实例，
+
+    ```
+    let scope = amisEmbed.embed('#root',{
+       "type":"page",
+       "body":[
+           {
+               "type":"form",
+               "name":"form1"
+           }
+       ]
+   }
+    ```
+
+    NPM方式的使用，需要做一个桥来返回实例
+
+    原理是制造一个空的自定义组件，负责amis 实例的获取和外部组件通信。
+
+    可以根据需要暴露相应的属性、方法对外通信。使用方式可以查看 src/pages/demos/communication/bridge/index.tsx
+
+
 
 ## 4. Amis 自定义组件
 
@@ -38,7 +60,7 @@ yarn && yarn start
    var amisEmbed = amisRequire('amis/embed');
    var amisFunc = amisRequire('amis');
     //声明自定义组件,不能写JSX，只能以React.createElement的方式
-    为了写起来方便，可以在babel-repl 网站上转换 https://www.babeljs.cn/repl
+    //s为了写起来方便，可以在babel-repl 网站上转换 https://www.babeljs.cn/repl
     amis.define("customComponent", function (require, exports, module) {
         const React = amisRequire('react');
         class CustomComponent extends React.Component {
@@ -111,8 +133,8 @@ yarn && yarn start
 
 
     
+## 7. 扩展: Amis Schema 动态执行脚本
 
 
-
-
+    Amis 
 
