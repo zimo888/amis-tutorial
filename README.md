@@ -8,3 +8,8 @@
 4. Amis 自定义组件
 5. Amis 其他补充（国际化，主题）
 6. Amis 结合Antd
+
+
+demo预览：
+
+yarn && yarn start
