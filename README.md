@@ -12,9 +12,9 @@ yarn && yarn start
 
 整理的内容包括：
 
-##1. HelloWorld (基于 Create React App)
-##2. Amis 基本使用
-##3. Amis 组件通信
+## 1. HelloWorld (基于 Create React App)
+## 2. Amis 基本使用
+## 3. Amis 组件通信
 
  3.1 target-Name 方式
 
@@ -70,7 +70,7 @@ yarn && yarn start
 
 ```
 
-##5. Amis 其他
+## 5. Amis 其他
 
    
  5.1 国际化方案
@@ -78,7 +78,7 @@ yarn && yarn start
  5.3 Amis 结合Antd
  5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
-##6. Amis工具方法使用
+## 6. Amis工具方法使用
 
    addRules 自定义校验规则
 
