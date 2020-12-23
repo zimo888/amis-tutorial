@@ -14,22 +14,15 @@ import { RendererProps } from 'amis/lib/factory'
   test: /(?:^|\/)amisBridge$/i,
 })
 class AmisBridge extends React.Component<RendererProps> {
-  static contextType = ScopedContext as IScopedContext
-    context: any
-    props: { 
-        target: any,
-        bridgeRef:any,
-        onRevieve:any
-    }
-
+  static contextType = ScopedContext
   // eslint-disable-next-line react/no-deprecated
   componentWillMount() {
-    const scoped = this.context
+    const scoped = this.context  as IScopedContext
     scoped.registerComponent(this)
   }
 
   componentWillUnmount() {
-    const scoped = this.context
+    const scoped = this.context  as IScopedContext
     scoped.unRegisterComponent(this)
   }
 
@@ -68,9 +61,9 @@ class AmisBridge extends React.Component<RendererProps> {
    * @param {*} name
    */
   receive(values: any, name: any) {
-    const { onRevieve } = this.props
-    onRevieve &&
-      onRevieve({
+    const { onReceive } = this.props
+    onReceive &&
+    onReceive({
         name,
         values,
       })

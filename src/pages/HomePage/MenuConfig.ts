@@ -2,6 +2,8 @@
 import Helloworld from '../demos/Helloworld'
 import Communication from '../demos/communication/target-name'
 import Bridge from '../demos/communication/bridge'
+import NormalRender from '../demos/customization/NormalRender'
+import FormItemRender from '../demos/customization/FormItemRender'
 const namespace = "/home";
 export const naviagtions = [
     {
@@ -29,15 +31,21 @@ export const naviagtions = [
         ]
     },
     {
-        name: '表单使用',
-        path: namespace + '/helloworld',
+        name: '自定义组件',
+        path: namespace + '/customize',
         icon: '',
-        component: Helloworld
-    },
-    {
-        name: '列表使用',
-        path: namespace + '/helloworld',
-        icon: '',
-        component: Helloworld
+        children:[
+            {
+                name: '非表单',
+                path: namespace + '/customize/normal',
+                icon: '',
+                component: NormalRender
+            },{
+                name: '表单项',
+                path: namespace + '/customize/formItem',
+                icon: '',
+                component: FormItemRender
+            },
+        ]
     }
 ]

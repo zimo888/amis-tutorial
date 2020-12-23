@@ -35,7 +35,7 @@ export default class HomePage extends React.Component<Props, StateProps> {
   }
 
   navigations2route = () => {
-    let routes: Array<React.Element> = [];
+    let routes: Array<JSX.Element> = [];
 
     this.state.navigations.forEach(root => {
         if (root.path) {
