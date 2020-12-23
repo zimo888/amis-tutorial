@@ -20,9 +20,9 @@ yarn && yarn start
 
  3.2 桥接方式(非官方方式)
 
-    JSSDK 使用方式会返回scope,并且可以scope.getComponentByName("form1") 方式获取组件实例，
+JSSDK 使用方式会返回scope,并且可以scope.getComponentByName("form1") 方式获取组件实例，
 
-    ```js
+```js
 
     let scope = amisEmbed.embed('#root',{
        "type":"page",
@@ -34,13 +34,13 @@ yarn && yarn start
        ]
     },{},{})
     scope.getComponentByName("form1")
-    ```
+```
 
-    NPM方式的使用，需要做一个桥来返回实例
+NPM方式的使用，需要做一个桥来返回实例
 
-    原理是制造一个空的自定义组件，负责amis 实例的获取和外部组件通信。
+原理是制造一个空的自定义组件，负责amis 实例的获取和外部组件通信。
 
-    可以根据需要暴露相应的属性、方法对外通信。使用方式可以查看 src/pages/demos/communication/bridge/index.tsx
+可以根据需要暴露相应的属性、方法对外通信。使用方式可以查看 src/pages/demos/communication/bridge/index.tsx
 
 
 
