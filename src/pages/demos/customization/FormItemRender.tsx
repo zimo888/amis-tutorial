@@ -2,6 +2,7 @@
 import * as React from 'react';
 import AmisRender from '../../AmisRender'
 import './FormItem'
+import './AntdSelect'
 export default class NormalRender extends React.Component{
     schema = {
         "type": "page",
@@ -22,6 +23,11 @@ export default class NormalRender extends React.Component{
               "type": "antdTextarea",
               "name": "textarea",
               "label": "antd文本域",
+            },
+            {
+              "type": "antdSelect",
+              "name": "select",
+              "label": "antd单选",
             }
           ]
         }

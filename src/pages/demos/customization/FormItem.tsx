@@ -18,7 +18,7 @@ class Normal extends React.Component<FormControlProps> {
 
   onChange = (e) => {
       const {value,onChange} = this.props;
-      onChange(e.target.value)
+      onChange(e.target.value   )
   };
   render() {
       const {value,onChange} = this.props;
