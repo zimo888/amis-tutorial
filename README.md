@@ -134,9 +134,3 @@ NPM方式的使用，需要做一个桥来返回实例
    registerIcon 自定义图标(按钮暂时不能用)
 
 
-    
-## 7. 扩展: Amis Schema 动态执行脚本
-
-
-    Amis 
-
