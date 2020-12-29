@@ -132,7 +132,11 @@ NPM方式的使用，需要做一个桥来返回实例
  5.1 国际化方案 
  
 国际化使用阿里的 [kiwi-intl](https://github.com/alibaba/kiwi) 
- 
+
+[国际化样例](https://github.com/zimo888/amis-tutorial/blob/master/src/pages/demos/localePage/index.tsx) 
+
+Amis 系统资源串替换：
+
  [src/i18n/amisLocaleRegister.ts](https://github.com/zimo888/amis-tutorial/blob/master/src/i18n/amisLocaleRegister.ts)
    
      一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
