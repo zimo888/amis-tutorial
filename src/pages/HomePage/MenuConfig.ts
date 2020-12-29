@@ -7,6 +7,7 @@ import FormItemRender from '../demos/customization/FormItemRender'
 import AddRules from '../demos/amisUtils/addRules'
 import RegisterAmisIcon from '../demos/amisUtils/registerIcon'
 import AmisComponentRegister from '../demos/amisRegister'
+import LocalePage from '../demos/localePage'
 const namespace = "/home";
 export const naviagtions = [
     {
@@ -30,9 +31,7 @@ export const naviagtions = [
                 path: namespace + '/communication/bridge',
                 icon: '',
                 component: Bridge
-            }
-
-            
+            } 
         ]
     },
     {
@@ -58,7 +57,21 @@ export const naviagtions = [
                 component: AmisComponentRegister
             },
         ]
-    },{
+    },
+    {
+        name: '国际化',
+        path: namespace + '/amisUtils',
+        icon: '',
+        children:[
+            {
+                name: 'Kiwi-inil',
+                path: namespace + '/amisUtils/locale',
+                icon: '',
+                component: LocalePage
+            },
+        ]
+    },
+    {
         name: 'Amis 工具方法',
         path: namespace + '/amisUtils',
         icon: '',

@@ -6598,6 +6598,18 @@ internal-slot@^1.0.2:
     has "^1.0.3"
     side-channel "^1.0.2"
 
+intl-messageformat-parser@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npm.taobao.org/intl-messageformat-parser/download/intl-messageformat-parser-1.4.0.tgz?cache=0&sync_timestamp=1608177713680&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fintl-messageformat-parser%2Fdownload%2Fintl-messageformat-parser-1.4.0.tgz#b43d45a97468cadbe44331d74bb1e8dea44fc075"
+  integrity sha1-tD1FqXRoytvkQzHXS7Ho3qRPwHU=
+
+intl-messageformat@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/intl-messageformat/download/intl-messageformat-2.2.0.tgz#345bcd46de630b7683330c2e52177ff5eab484fc"
+  integrity sha1-NFvNRt5jC3aDMwwuUhd/9eq0hPw=
+  dependencies:
+    intl-messageformat-parser "1.4.0"
+
 invariant@^2.2.1, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.npm.taobao.org/invariant/download/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
@@ -7679,6 +7691,14 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
 
+kiwi-intl@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npm.taobao.org/kiwi-intl/download/kiwi-intl-1.2.4.tgz#43bf693ca09853648479f76f03abf41234b217cb"
+  integrity sha1-Q79pPKCYU2SEefdvA6v0EjSyF8s=
+  dependencies:
+    intl-messageformat "^2.2.0"
+    lodash.get "^4.4.2"
+
 kleur@^3.0.3:
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/kleur/download/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
@@ -7885,6 +7905,11 @@ lodash.flow@^3.5.0:
   version "3.5.0"
   resolved "https://registry.npm.taobao.org/lodash.flow/download/lodash.flow-3.5.0.tgz#87bf40292b8cf83e4e8ce1a3ae4209e20071675a"
   integrity sha1-h79AKSuM+D5OjOGjrkIJ4gBxZ1o=
+
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.npm.taobao.org/lodash.get/download/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
 
 lodash.groupby@^4.6.0:
   version "4.6.0"
