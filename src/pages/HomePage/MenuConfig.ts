@@ -6,6 +6,7 @@ import NormalRender from '../demos/customization/NormalRender'
 import FormItemRender from '../demos/customization/FormItemRender'
 import AddRules from '../demos/amisUtils/addRules'
 import RegisterAmisIcon from '../demos/amisUtils/registerIcon'
+import AmisComponentRegister from '../demos/amisRegister'
 const namespace = "/home";
 export const naviagtions = [
     {
@@ -29,7 +30,9 @@ export const naviagtions = [
                 path: namespace + '/communication/bridge',
                 icon: '',
                 component: Bridge
-            },
+            }
+
+            
         ]
     },
     {
@@ -47,6 +50,12 @@ export const naviagtions = [
                 path: namespace + '/customize/formItem',
                 icon: '',
                 component: FormItemRender
+            },
+            {
+                name: '自定义Amis组件',
+                path: namespace + '/customize/amiscomponent',
+                icon: '',
+                component: AmisComponentRegister
             },
         ]
     },{

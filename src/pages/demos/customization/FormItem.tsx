@@ -1,7 +1,5 @@
 import React from 'react'
 import { FormItem, ScopedContext } from 'amis'
-import {IScopedContext} from 'amis/lib/Scoped';
-import { RendererProps } from 'amis/lib/factory'
 import { Input } from 'antd';
 import { FormControlProps } from "amis/lib/renderers/Form/Item";
 const { TextArea } = Input;
@@ -17,11 +15,11 @@ class Normal extends React.Component<FormControlProps> {
   static contextType = ScopedContext
 
   onChange = (e) => {
-      const {value,onChange} = this.props;
+      const {onChange} = this.props;
       onChange(e.target.value   )
   };
   render() {
-      const {value,onChange} = this.props;
+      const {value} = this.props;
     return   <TextArea placeholder="Antd 的文本域" value={value} allowClear onChange={this.onChange } />
   }
 }

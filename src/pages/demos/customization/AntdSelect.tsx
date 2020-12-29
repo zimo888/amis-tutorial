@@ -1,8 +1,6 @@
 import React from 'react'
 import { FormItem, ScopedContext } from 'amis'
-import {IScopedContext} from 'amis/lib/Scoped';
-import { RendererProps } from 'amis/lib/factory'
-import { Input,Select } from 'antd';
+import { Select } from 'antd';
 import { FormControlProps } from "amis/lib/renderers/Form/Item";
 const { Option } = Select;
 /**
@@ -17,11 +15,10 @@ class AntdSelect extends React.Component<FormControlProps> {
   static contextType = ScopedContext
 
   onChange = (e) => {
-      const {value,onChange} = this.props;
+      const {onChange} = this.props;
       onChange(e.target.value   )
   };
   render() {
-      const {value,onChange} = this.props;
     return ( 
     <> 
      <Select
