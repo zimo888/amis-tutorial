@@ -64,7 +64,7 @@ NPM方式的使用，需要做一个桥来返回实例
    var amisEmbed = amisRequire('amis/embed');
    var amisFunc = amisRequire('amis');
     //声明自定义组件,不能写JSX，只能以React.createElement的方式
-    //s为了写起来方便，可以在babel-repl 网站上转换 https://www.babeljs.cn/repl
+    //为了写起来方便，可以在babel-repl 网站上转换 https://www.babeljs.cn/repl
     amis.define("customComponent", function (require, exports, module) {
         const React = amisRequire('react');
         class CustomComponent extends React.Component {
@@ -108,31 +108,31 @@ NPM方式的使用，需要做一个桥来返回实例
    
  5.1 国际化方案 src/i18n/amisLocaleRegister.ts
    
-     一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
+一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
      
-     如: "login.validateAccount.accountError":"account is invalidate";
+如: "login.validateAccount.accountError":"account is invalidate";
 
      
-     Amis 使用的是 {"确定":"confirm"} 以中文字符串为key,
+Amis 使用的是 {"确定":"confirm"} 以中文字符串为key,
      
-     目前就一个资源文件，项目和Amis的格式不一致的，需要自定义国际化文本来替换内部的资源串。
+目前就一个资源文件，项目和Amis的格式不一致的，需要自定义国际化文本来替换内部的资源串。
 
  5.2 主题方案  src/scss/default.scss
 
-    Amis使用Sass 作为样式主题，项目开发中需要对Amis默认的样式进行覆盖的，也通用需要Sass进行主题管理，导入amis之后，进行覆盖即可。
+Amis使用Sass 作为样式主题，项目开发中需要对Amis默认的样式进行覆盖的，也通用需要Sass进行主题管理，导入amis之后，进行覆盖即可。
     
-    实现方式在src/scss 文件夹中，导入自己的default.scss 即可。
+实现方式在src/scss 文件夹中，导入自己的default.scss 即可。
 
  5.3 Amis 结合Antd
 
-    提供了一些Antd 的自定义组件样例。
+提供了一些Antd 的自定义组件样例。
     
  5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
 ## 6. Amis工具方法使用 src/pages/demos/amisUtils
 
-   addRules 自定义校验规则
+addRules 自定义校验规则
 
-   registerIcon 自定义图标(按钮暂时不能用)
+registerIcon 自定义图标(按钮暂时不能用)
 
 
