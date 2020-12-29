@@ -131,6 +131,7 @@ NPM方式的使用，需要做一个桥来返回实例
    
  5.1 国际化方案 
  
+国际化使用阿里的 [kiwi-intl](https://github.com/alibaba/kiwi) 
  
  [src/i18n/amisLocaleRegister.ts](https://github.com/zimo888/amis-tutorial/blob/master/src/i18n/amisLocaleRegister.ts)
    
@@ -164,7 +165,7 @@ NPM方式的使用，需要做一个桥来返回实例
  
  [config-overrides.js](https://github.com/zimo888/amis-tutorial/blob/master/config-overrides.js)
 
-## 6. Amis工具方法使用 src/pages/demos/amisUtils
+## 6. Amis工具方法使用 
 
    addRules 自定义校验规则
 
