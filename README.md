@@ -46,9 +46,11 @@ NPM方式的使用，需要做一个桥来返回实例
 
 ## 4. Amis 自定义组件
 
-4.1 FormItem 类
+4.1 FormItem类 src/pages/demos/customization/AntdSelect.tsx
 
-4.2 非Form类
+4.2 非Form类： src/pages/demos/customization/NormalRender.tsx
+
+4.3 远程获取Amis 组件，运行时注册方案。 src/pages/demos/amisRegister/index.tsx
 
 ## JSSDK自定义组件方式
 
@@ -104,7 +106,7 @@ NPM方式的使用，需要做一个桥来返回实例
 ## 5. Amis 其他
 
    
- 5.1 国际化方案
+ 5.1 国际化方案 src/i18n/amisLocaleRegister.ts
    
      一般公司使用 功能名称.子功能名称.消息名称=消息 方式命名
      
@@ -115,7 +117,7 @@ NPM方式的使用，需要做一个桥来返回实例
      
      目前就一个资源文件，项目和Amis的格式不一致的，需要自定义国际化文本来替换内部的资源串。
 
- 5.2 主题方案
+ 5.2 主题方案  src/scss/default.scss
 
     Amis使用Sass 作为样式主题，项目开发中需要对Amis默认的样式进行覆盖的，也通用需要Sass进行主题管理，导入amis之后，进行覆盖即可。
     
@@ -127,7 +129,7 @@ NPM方式的使用，需要做一个桥来返回实例
     
  5.4 增加开发时跨域请求接口配置 (config-overrides.js)
 
-## 6. Amis工具方法使用
+## 6. Amis工具方法使用 src/pages/demos/amisUtils
 
    addRules 自定义校验规则
 
