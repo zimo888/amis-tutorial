@@ -60,12 +60,12 @@ export const naviagtions = [
     },
     {
         name: '国际化',
-        path: namespace + '/amisUtils',
+        path: namespace + '/locale',
         icon: '',
         children:[
             {
                 name: 'Kiwi-inil',
-                path: namespace + '/amisUtils/locale',
+                path: namespace + '/locale/index',
                 icon: '',
                 component: LocalePage
             },

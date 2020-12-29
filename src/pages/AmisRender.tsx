@@ -18,8 +18,11 @@ export default class AmisRenderer extends React.Component {
             isCancel:false,
             jumpTo: props.jumpTo || ((to: string, action?: any) => {
             }),
-            fetcher:()=>{
-
+            fetcher:(api)=>{
+               return new Promise((resolve,reject)=>{
+                   console.log('api==',api)
+                    resolve(api)
+                })
             }
         };
     }
