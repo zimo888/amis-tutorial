@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.8.0",
-    "amis": "^1.0.19",
+    "amis": "^1.1.0",
     "antd": "^4.9.4",
     "axios": "^0.21.1",
     "kiwi-intl": "^1.2.4",
