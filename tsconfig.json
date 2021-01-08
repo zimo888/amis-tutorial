@@ -5,8 +5,11 @@
     "module": "esnext",
     "allowJs": true,
     "strict": false,
+    "sourceMap": false,
+    "importHelpers": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "lib": [
@@ -20,7 +23,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "outDir": "dist",
-    "noEmit": true,
     "noFallthroughCasesInSwitch": true
   },
   "include": [

@@ -6,6 +6,16 @@
 
 demo预览：
 
+支持了snowpack,可快速启动
+
+```
+yarn && yarn snowpack
+```
+
+
+react-app-rewired 更改为webpack-dev-server，方便扩展
+
+
 ```
 yarn && yarn start
 ```
@@ -178,4 +188,6 @@ Amis 系统资源串替换：
    registerIcon 自定义图标(按钮暂时不能用自定义图标，Amis用的是font Icon)
 
 [registerIcon](src/pages/demos/amisUtils/registerIcon.tsx)
+
+
 

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Schema} from 'amis/lib/types';
 import {render as AmisRender} from 'amis';
 import { registerRenderer, RendererProps, unRegisterRenderer } from 'amis/lib/factory'
-import styled from 'styled-components';
+import styled, { CSSObject } from 'styled-components';
 import { FormControlProps, registerFormItem } from 'amis/lib/renderers/Form/Item';
 
 
@@ -13,7 +13,7 @@ interface  ComponentSetting{
     controller?:{
         [propName: string]: any;
     },
-    styles?:Object,
+    styles?:CSSObject,
 
 }
 
