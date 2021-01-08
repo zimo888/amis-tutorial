@@ -24,9 +24,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "server": "node server.js",
     "start": "webpack serve",
     "build": "webpack",
-    "server": "node server.js",
     "snowpack": "snowpack dev",
     "snowpack-build": "snowpack build"
   },

@@ -6,18 +6,21 @@
 
 demo预览：
 
-支持了snowpack,可快速启动
+支持了snowpack,可10秒内启动
+
+SnowPack 启动：
 
 ```
 yarn && yarn snowpack
 ```
 
 
+WebPack 启动，请耐心等待...
+
 react-app-rewired 更改为webpack-dev-server，方便扩展
 
-
 ```
-yarn && yarn start
+yarn && yarn server
 ```
 
 整理的内容包括：
