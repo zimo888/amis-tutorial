@@ -4,15 +4,16 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 //编译结果测量
 const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+//与uglifyjs-webpack-plugin 的区别是支持es6
 const TerserPlugin = require("terser-webpack-plugin");
 
 const smp = new SpeedMeasurePlugin();
-// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
+//构建时候会有漂亮的工具条
 const WebpackBar = require("webpackbar");
 const resolve = (dir) => path.join(__dirname, "./", dir);
-console.log(resolve("src"));
-let config = function (webpackEnv) {
+console.log('构建目录',resolve("src"));
+const config = function (webpackEnv) {
   const isEnvDevelopment = webpackEnv === "development";
   const isProduction = webpackEnv === "production";
   return {
@@ -100,11 +101,11 @@ let config = function (webpackEnv) {
             reuseExistingChunk: true, // 默认使用已有的模块
           },
           amis: {
-            name: "amis", // 单独将 amis 拆包
+            name: "amis", // 将 amis 拆包
             test: /[\\/]node_modules[\\/]amis[\\/]/,
           },
           antd: {
-            name: "antd", // 单独将 antd 拆包
+            name: "antd", // 将 antd 拆包
             test: /[\\/]node_modules[\\/]antd[\\/]/,
           },
           vendors: {
@@ -114,16 +115,17 @@ let config = function (webpackEnv) {
         },
       },
     },
-    // devtool: "inline-source-map",
+    // devtool: "inline-source-map", sourceMap先关了，build的时候再打开
     devServer: {
       contentBase: path.join(__dirname, "dist"),
       publicPath: path.join(__dirname, "dist"),
+      //historyApiFallback 解决刷新时候react-router 404问题
       historyApiFallback:{
         rewrites: [{
           from: /.*/g,
           to: '/public/index.html'
         }]
-      },//解决刷新时候react-router 404问题
+      },
       compress: true,
       port: 9000,
       hot: true,

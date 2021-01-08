@@ -190,4 +190,10 @@ Amis 系统资源串替换：
 [registerIcon](src/pages/demos/amisUtils/registerIcon.tsx)
 
 
+## 7. 构建编译
 
+ 支持 [snowpack](snowpack.config.js)
+ 
+ 支持 [webpack](webpack.config.js)
+
+ 使用方式都写到了对应文件的目录中。

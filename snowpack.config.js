@@ -1,4 +1,8 @@
 
+/**
+ * scss 文件编译用node-sass
+ * --importer=node_modules/node-sass-tilde-importer 用来支持 ~/的写法
+ */
 const scssCompile = `npx node-sass src/scss/default.scss -o snowpack/css --importer=node_modules/node-sass-tilde-importer`;
 
 module.exports = {
